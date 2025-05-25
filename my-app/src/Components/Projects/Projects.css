@@ -1,0 +1,59 @@
+.Projects-layout {
+    width: 85%;
+    background-color: #0353A4;
+    margin-top: 1rem;
+    padding-left: 0px;
+}
+
+.Projects-layout h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.Projects-list {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    margin: 1rem;
+
+}
+
+.tag-container {
+
+    
+}
+
+.Project-tag {
+    font-size: 12px;
+
+    border: 1px solid white;
+}
+
+.Project-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Project-description ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Projects-list i {
+    font-size: 20px;
+    color: #979DAC;
+    transition: color 0.3s ease;
+}
+
+.Projects-list i:hover {
+    color: #001233;
+}
+
+
+
+

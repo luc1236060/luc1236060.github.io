@@ -1,0 +1,118 @@
+.PersonalInfo-layout {
+    max-width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-left: 0rem;
+
+
+}
+
+.PersonalInfo-img {
+    width: 350px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    
+
+}
+
+.PersonalInfo-img img {
+    width: 350px;
+    height: auto;
+}
+
+.PersonalInfo-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+    
+
+}
+
+.Top-box h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.Top-box h2 {
+    margin: 0;
+}
+
+
+.Socials {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    margin-left: -30px;
+}
+
+.Socials i {
+    color: #0353A4;
+    transition: color 0.5s ease;
+    font-size: 30px;
+    margin-left: 0px;
+}
+
+.Socials i:hover{
+    color: #979DAC;
+
+}
+
+.Contact {
+    height: 75px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #0353A4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.Contact li{
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.location::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f601";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.email::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f0e0";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.phone::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f095";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-weight: 900;
+}

@@ -1,0 +1,30 @@
+.Education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    list-style: none;
+    height: 50px;
+    background-color:#0353A4;
+
+
+}
+
+.Education li {
+    position: relative;
+    padding-left: 25px;
+}
+
+.Education li::before{ 
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("../../assets/ucficon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
