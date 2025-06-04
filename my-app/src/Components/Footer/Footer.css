@@ -1,12 +1,98 @@
 .Footer {
     background-color: #001233;
     position: relative;
+    overflow: visible;
     padding: 1rem;
     display: flex;
-    flex-direction: row;
-    text-align: center;
     justify-content: center;
     gap: 30px;
-    box-sizing: border-box;
+    width: 100%;
     
+}
+
+.inspire-container {
+    position: relative;
+    display: inline-block;
+}
+
+.inspireBTN {
+    display: block;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.inspireList,
+.inspireList * {
+    box-sizing: border-box;
+}
+
+.inspireList {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, -10px);
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibliity 0.3s linear 0.3s;
+
+    background: #33415C;
+    padding: 0rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    min-width: 140px;
+}
+
+.inspireList.open {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    visibility: visible;
+}
+
+.inspireList:not(.open) {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+    visibility: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.inspireBTN:hover {
+    color: #0466C8;
+}
+
+.inspireList ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.inspireList li {
+    margin: 0rem 0rem;
+}
+
+.inspireList a {
+    width: 100%;
+    display: block;
+    padding: 0.5rem 1rem;;
+    color: #979DAC;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.inspireList a:hover {
+    background-color: #5C677D;
+    color: #001233
+}
+
+@media (max-width: 480px) {
+    .Footer {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        padding: 0 8px;
+    }
 }

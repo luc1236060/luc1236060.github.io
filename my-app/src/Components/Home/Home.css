@@ -1,45 +1,133 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
 .container {
     margin: 0 auto;
-    padding: 0 0rem;
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 1400px;
+    box-sizing: border-box;
 }
-.home-layout{
-    background-color: #023e7d;
+
+.Home-layout {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .Profile-layout {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
-    width: 80%;
-    padding: 0.5rem;
+    width: 100%;
 
 }
 
 .Profile-left {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: flex-end;
-    width: 100%;
-    align-self: stretch;
-}
-
-.sub-left {
+    flex: 3;
     display: flex;
     flex-direction: column;
     gap: 0rem;
-    align-items: flex-end;
-    width: 100%;
 }
 
 .Profile-right {
+    flex: 2;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.Education {
-    width: 33rem;
+.Footer {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .About,
+    .Education,
+    .Projects,
+    .Skills,
+    .OtherSkills,
+    .PersonalInfo {
+        width: 80%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+
+    .Profile-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Profile-left,
+    .Profile-right {
+        flex: 1;
+        align-items: center;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .Profile-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .Profile-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .PersonalInfo,
+    .About,
+    .Projects,
+    .Education,
+    .Skills,
+    .OtherSkills {
+        width: 100% !important;
+        padding: 8px;
+    }
+
+    .Profile-layout {
+        gap: 0.5rem;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 8px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .Footer {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        padding: 0 8px;
+    }
+
 }

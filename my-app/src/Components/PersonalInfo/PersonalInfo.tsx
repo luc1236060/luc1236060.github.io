@@ -17,19 +17,24 @@ const PersonalInfo: React.FC = () => {
                         <ul className="Socials">
                             <li>
                                 <a href="https://www.linkedin.com/in/louis-au-702b42220/">
-                                    <i className="fa-brands fa-linkedin"></i>
+                                    <i aria-hidden="true" title="LinkedIn" className="fa-brands fa-linkedin"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://github.com/luc1236060">
-                                    <i className="fa-brands fa-github"></i>
+                                    <i aria-hidden="true" title="GitHub" className="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://leetcode.com/u/luc1236060/">
+                                    <i aria-hidden="true" title="LeetCode" className="fa-solid fa-laptop-code"></i>
                                 </a>
                             </li>
 
                         </ul>
                         <ul className="Contact">
-                            <li className="location">NYC</li>
-                            <li className="email">temp@temp.com</li>
+                            <li className="location">West Palm Beach, FL</li>
+                            <li className="email">lau2000g@gmail.com</li>
                         </ul>
                     </div>
                 </div>

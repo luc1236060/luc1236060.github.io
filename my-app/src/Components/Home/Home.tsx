@@ -4,27 +4,29 @@ import Education from "../Education/Education";
 import PersonalInfo from "../PersonalInfo/PersonalInfo";
 import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
+import OtherSkills from "../Skills/OtherSkills";
 import Footer from "../Footer/Footer";
 
 const Home: React.FC = () => {
     return(
-        <div className="container">
-            <div className="Home-layout">
-                <div className="Profile-layout">
-                    <div className="Profile-left">
-                        <PersonalInfo/>
-                        <div className="sub-left">
+        <div>
+            <div className="container">
+                <div className="Home-layout">
+                    <div className="Profile-layout">
+                        <div className="Profile-left">
+                            <PersonalInfo/>
                             <About/>
                             <Projects/>
                         </div>
-                    </div>
-                    <div className="Profile-right">
-                        <Education/> 
-                        <Skills/>
+                        <div className="Profile-right">
+                            <Education/> 
+                            <Skills/>
+                            <OtherSkills/>
+                        </div>
                     </div>
                 </div>
-                <Footer/>
             </div>
+            <Footer/>
         </div>
     );
 };

@@ -1,37 +1,37 @@
+.PersonalInfo {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 .PersonalInfo-layout {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     align-items: flex-end;
-    justify-content: flex-start;
-    gap: 0.5rem;
-    margin-left: 0rem;
-
-
+    justify-content: flex-end;
+    gap: 1rem;
 }
 
 .PersonalInfo-img {
-    width: 350px;
-    height: 350px;
+    max-width: 350px;
+    aspect-ratio: 1 / 1;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     overflow: hidden;
-    
-
 }
 
 .PersonalInfo-img img {
-    width: 350px;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .PersonalInfo-details{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-left: 20px;
-    
-
 }
 
 .Top-box h1 {
@@ -47,9 +47,11 @@
 .Socials {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 20px;
     list-style: none;
-    margin-left: -30px;
+    padding: 0;
 }
 
 .Socials i {
@@ -106,13 +108,65 @@
     font-weight: 900;
 }
 
-.phone::before {
-    font-family: "Font Awesome 6 Free";
-    content: "\f095";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 12px;
-    font-weight: 900;
+@media (max-width: 1024px) {
+    .PersonalInfo {
+        width: 80%;
+        padding: 0px;
+        padding-bottom: 10px;
+    }
 }
+
+@media (max-width: 786px) {
+    .PersonalInfo {
+        width: 90%;
+        padding: 1rem;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .PersonalInfo-layout {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .PersonalInfo-details {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .Socials {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .Contact {
+        align-items: center;
+       min-width: 250px;
+    }
+
+    .Contact li {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .PersonalInfo-img {
+        width: 280px;
+        height: 280px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .PersonalInfo-img img {
+        width: 280px;
+        height: auto;
+    }
+}
+

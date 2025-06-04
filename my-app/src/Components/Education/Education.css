@@ -1,19 +1,31 @@
 .Education {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color:#0353A4;
+}
+
+.Education-layout {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-size: 20px;
+    width: 100%;
+}
+
+.Education ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
-    height: 50px;
-    background-color:#0353A4;
-
-
+    width: 100%;
+    text-align: center;
 }
 
 .Education li {
     position: relative;
-    padding-left: 25px;
+    padding-left: 30px;
+    list-style: none;
+    display: inline-block;
 }
 
 .Education li::before{ 
@@ -27,4 +39,19 @@
     background-image: url("../../assets/ucficon.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) {
+   .Education {
+        width: 80%;
+   }
+}
+
+@media (max-width: 768px) {
+    .Education {
+        width: 90%;
+        padding: 1rem;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
 }
