@@ -6,12 +6,14 @@ const About: React.FC = () => {
             <div className="About-layout">
                 <h2>About Me</h2>
                 <p>
-                    My name is Louis Au, and I'm a recently graduated software engineer. I got interested in programming and software engineering
-                    at a young age through video games and would love to eventually develop one of my own
-                    in the future. My career into this field started with my education in Computer Science at UCF,
-                    where I worked on many projects. Being fresh out of college I'm now able to apply myself having
-                    devloped a couple websites as well a web app. Currently I am working on some personal projects
-                    to better my skills and range to help me increase my professional experience.
+                    Computer Science graduate from the University of Central Florida 
+                    with a solid foundation in full-stack development, 
+                    cloud deployment, and applied machine learning. Experienced 
+                    in building and deploying web and desktop applications using 
+                    React, Node.js, and Electron, with additional work in 
+                    Python-based neural networks and Java encryption tools. 
+                    Strong problem-solver with hands-on experience in AWS Lightsail, 
+                    open-source contributions, and collaborative development.
                 </p>
             </div>
         </section>

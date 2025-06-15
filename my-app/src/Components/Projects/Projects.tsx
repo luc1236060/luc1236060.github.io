@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
                         <p>Developing a React-based website using TSX for structure and HTML/CSS for styling.</p>
                         <ul>
                             <li>
-                                <a href="https://www.aa-fl.com/">
+                                <a href="https://luc1236060.github.io">
                                     <i aria-hidden="true" title="Luc.com" className="fa-solid fa-globe"></i>
                                 </a>
                             </li>
@@ -98,13 +98,62 @@ const Projects: React.FC = () => {
                         </a>
                     </dd>
                     <dt className="Project-title">
-                        <h3>Velocity/Speed Calculator</h3>
+                        <h3>Simple Neural Network (Pytorch)</h3>
+                        <div className="tag-container">
+                            <span className="Project-tag">Project</span>
+                        </div>
+                    </dt>
+                    <dd>
+                        <p>
+                            Using Pyton (Pytorch), developed a simple neural network to classify handwritten digits
+                            on an image from MNIST dataset. It handles training, testing, plotting, and visualizing.
+                        </p>
+                        <a href="https://github.com/luc1236060/Projects/tree/master/SimpleNeuralNetwork">
+                            <i aria-hidden="true" title="GitHub" className="fa-brands fa-github"></i>
+                        </a>
+                    </dd>
+                    <dt className="Project-title">
+                        <h3>Weather App</h3>
                         <div className="tag-container">
                             <span className="Project-tag">Project</span>
                         </div>
                     </dt>
                     <dd className="Project-description">
-                        <p>Using Python, created a program to calculate velocity/speed of an object and produce a graph</p> 
+                        <p>
+                            Using React with JavaScript, developed a weather app that utilizes api calls to display current weather
+                            conditions in a given city.
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="https://www.aa-fl.com/">
+                                    <i aria-hidden="true" title="Luc.com" className="fa-solid fa-globe"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/luc1236060/WeatherApp.git">
+                                    <i aria-hidden="true" title="GitHub" className="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt className="Project-title">
+                        <h3>Desktop Music App</h3>
+                        <div className="tag-container">
+                            <span className="Project-tag">Project</span>
+                        </div>
+                    </dt>
+                    <dd className="Project-description">
+                        <p>
+                            Using JavaScript, HTML/CSS and Electron to wrap everything, developed a desktop music player
+                            that displays available songs, provides a search feature, and plays songs.
+                        </p>
+                        <ul>
+                            <li>
+                                <a  href="https://github.com/luc1236060/MusicApp">
+                                    <i aria-hidden="true" title="GitHub" className="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </dd>
                     <dt className="Project-title">
                         <h3>Decrypter</h3>
@@ -113,7 +162,10 @@ const Projects: React.FC = () => {
                         </div>
                     </dt>
                     <dd className="Project-description">
-                        <p>Using Java, developed a program to decrypt text that was encrypted with different ciphers</p>
+                        <p>Using Java, developed a program to decrypt text that was encrypted with Vigenere cipher</p>
+                        <a href="https://github.com/luc1236060/Projects/tree/master/VinegereDecrypter">
+                            <i aria-hidden="true" title="GitHub" className="fa-brands fa-github"></i>
+                        </a>
                     </dd>
                     <dt className="Project-title">
                         <h3>Encrypter</h3>
@@ -122,7 +174,10 @@ const Projects: React.FC = () => {
                         </div>
                     </dt>
                     <dd className="Project-description">
-                        <p>Using Java, developed a program to encrypt plain text using different ciphers</p>
+                        <p>Using Java, developed a program to encrypt plain text using Vigenere cipher</p>
+                        <a href="https://github.com/luc1236060/Projects/tree/master/VinegereEncrypter">
+                                <i aria-hidden="true" title="GitHub" className="fa-brands fa-github"></i>
+                        </a>
                     </dd>
                 </dl>
             </div>
