@@ -125,8 +125,8 @@ const Projects: React.FC = () => {
                         </p>
                         <ul>
                             <li>
-                                <a href="https://www.aa-fl.com/">
-                                    <i aria-hidden="true" title="Luc.com" className="fa-solid fa-globe"></i>
+                                <a href="https://luc1236060.github.io/WeatherApp/">
+                                    <i aria-hidden="true" title="Weather App" className="fa-solid fa-globe"></i>
                                 </a>
                             </li>
                             <li>
@@ -148,6 +148,11 @@ const Projects: React.FC = () => {
                             that displays available songs, provides a search feature, and plays songs.
                         </p>
                         <ul>
+                            <li>
+                                <a href="https://luc1236060.github.io/MusicAppPreview/">
+                                    <i aria-hidden="true" title="Music App Preview" className="fa-solid fa-globe"></i>
+                                </a>
+                            </li>
                             <li>
                                 <a  href="https://github.com/luc1236060/MusicApp">
                                     <i aria-hidden="true" title="GitHub" className="fa-brands fa-github"></i>
